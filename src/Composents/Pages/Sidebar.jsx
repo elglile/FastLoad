@@ -41,16 +41,13 @@ const Sidebar = () => {
           <div className="desktop_menu">
             <ul className="menu-links">
               <li>
-                <a href="">Home</a>
+                <a href="#Home">Home</a>
               </li>
               <li>
-                <a href="">about</a>
+                <a href="#Sevice">Sevices</a>
               </li>
               <li>
-                <a href="">Sevice</a>
-              </li>
-              <li>
-                <a href="">Contact Us</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -73,16 +70,13 @@ const Sidebar = () => {
         >
           <ul className="menu-links" style={{ margin: "0", padding: "0" }}>
             <li>
-              <a href="">Home</a>
+              <a href="#Home">Home</a>
             </li>
             <li>
-              <a href="">about</a>
+              <a href="#Sevice">Sevices</a>
             </li>
             <li>
-              <a href="">Sevice</a>
-            </li>
-            <li>
-              <a href="">Contact Us</a>
+              <a href="#contact">Contact Us</a>
             </li>
           </ul>
         </div>

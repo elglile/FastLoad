@@ -34,7 +34,7 @@ const Sections = () => {
 const Section1 = () => {
   return (
     <>
-      <section className="section-A">
+      <section className="section-A" id="Home">
         <div id="hero" className="hero  ">
           <div className="row gy-4 hero_contnt">
             <div className="Sous_title">
@@ -91,8 +91,8 @@ const Section2 = () => {
 
   return (
     <>
-      <div className="Concnt_dow section-title">
-        <h2>
+      <div className="Concnt_dow section-title"id="Sevice">
+        <h2 >
           <span>YouTube Video </span>Downloader
         </h2>
         
@@ -189,53 +189,6 @@ const DownloadOptions = () => {
 };
 
 
-// const Section2 = () => {
-//   const [videoUrl, setVideoUrl] = useState("");
-//   const [isLoading, setIsLoading] = useState(false);
-
-//   const handleDownload = async () => {
-//     if (!videoUrl) {
-//       alert("يرجى إدخال رابط الفيديو!");
-//       return;
-//     }
-
-//     setIsLoading(true);
-
-//     try {
-//       const response = await axios.get("http://localhost:5000/download/video", {
-//         params: { url: videoUrl },
-//         responseType: "blob", // لتحميل الفيديو كملف
-//       });
-
-//       const url = window.URL.createObjectURL(new Blob([response.data]));
-//       const link = document.createElement("a");
-//       link.href = url;
-//       link.setAttribute("download", "video.mp4");
-//       document.body.appendChild(link);
-//       link.click();
-//     } catch (error) {
-//       console.error("حدث خطأ أثناء التنزيل:", error);
-//       alert("حدث خطأ أثناء التنزيل.");
-//     } finally {
-//       setIsLoading(false);
-//     }
-//   };
-
-//   return (
-//     <div className="section">
-//       <h2>YouTube Video Downloader</h2>
-//       <input
-//         type="url"
-//         placeholder="أدخل رابط الفيديو"
-//         value={videoUrl}
-//         onChange={(e) => setVideoUrl(e.target.value)}
-//       />
-//       <button onClick={handleDownload}>
-//         {isLoading ? <span>جاري التحميل...</span> : <span>تحميل</span>}
-//       </button>
-//     </div>
-//   );
-// };
 
 const Section3 = () => {
   const clients = [

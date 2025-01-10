@@ -13,6 +13,8 @@ import Play from './Play.ico'
 import LEVELD from './LEVELD.mp4'
 import bg from './bg.png'
 import load from './load.png'
+import ico from './ico.svg'
+import ico1 from './ico1.png'
 
 
 
@@ -20,7 +22,7 @@ import load from './load.png'
 
 
 
-export const assets={
+    export const assets={
     Logo,
     p1,
     Effect1,
@@ -30,5 +32,5 @@ export const assets={
     Ab1,
     Ab2,
     Ab4,contactBg,Untitled,Play
-    ,LEVELD, bg,load
+    ,LEVELD, bg,load, ico, ico1
 }
